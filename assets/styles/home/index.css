@@ -9,9 +9,12 @@
      padding: 0px;
  }
 
- .category-img {
+ .home .category .category-img {
      width: 100%;
-     height: 150px;
+     height: 200px;
+ }
+ .home .category .title p {
+    font-size: 40px;
  }
 
  /* Home display*/

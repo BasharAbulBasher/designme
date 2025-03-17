@@ -154,20 +154,20 @@
         </div>
     </div>
     
-        <div class="categories row justify-content-center align-items-center">
-            {% for category in categories %}
-            <div class="category col-md-3 ms-1 mt-2">
-                <a href="/user/category/getCategory/{{ category.id }}">
-                    <div class="img">
-                        <img class="category-img"
-                            src="{{ asset('/img/category/' ~ category.id  ~ '/' ~ category.images[0].path) }}">
-                    </div>
-                    <div class="title d-flex justify-content-center align-items-center">
-                        <p>{{ category.title }}</p>
-                    </div>
-                </a>
-            </div>
-            {% endfor %}
+        <div class="categories row">
+                {% for category in categories %}
+                <div class="category col-6 col-lg-4">
+                    <a href="/user/category/getCategory/{{ category.id }}">
+                        <div class="img">
+                            <img class="category-img"
+                                src="{{ asset('/img/category/' ~ category.id  ~ '/' ~ category.images[0].path) }}">
+                        </div>
+                        <div class="title d-flex justify-content-center align-items-center">
+                            <p>{{ category.title }}</p>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
         </div>
 
 </div>
