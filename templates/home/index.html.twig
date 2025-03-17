@@ -1,0 +1,174 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+<style>
+
+</style>
+
+<div class="home">
+    <div class="display d-none d-lg-block">
+        <div class="logo d-flex justify-content-center align-items-center">
+            <div class="content">
+                <span>D</span>
+                <span>E</span>
+                <span>S</span>
+                <span>I</span>
+                <span>G</span>
+                <span>N</span>
+                <span>M</span>
+                <span>E</span>
+                <div class="borderBottom"> </div>
+                <div class="d-w">
+                    <p>Design & Webservices </p>
+                </div>
+            </div>
+        </div>
+        <div class="website">
+            <div class="images row">
+                <div class="col-md-4"><img src="{{ asset('/app/website1.png') }}"></div>
+                <div class="col-md-4"><img src="{{ asset('/app/website2.png') }}"></div>
+                <div class="col-md-4"><img src="{{ asset('/app/website3.png') }}"></div>
+            </div>
+            <div class="cover">
+            </div>
+            <div class="description d-flex justify-content-center align-items-center">
+                <div class="text">
+                    <img src="{{ asset('/app/website-BG.png') }}">
+                    <h2>Wir erstellen deine Website <span class="kostenlos">professionell </span></h2>
+                </div>
+            </div>
+
+        </div>
+        <div class="digital-menu">
+            <img class="img1" src="{{ asset('/app/digital-menu-bg.png') }}">
+            <div class="cover d-flex justify-content-center align-items-center">
+                <h2>Mache dein Menü noch attraktiver, digital und modern!</h2>
+            </div>
+            <img class="img2" src="{{ asset('/app/digital-BS.png') }}">
+            <div class="no-overload-bs">
+                <img class="bs1-photo1" src="{{ asset('/app/bs1-photo1.png') }}">
+                <img class="bs2-photo1" src="{{ asset('/app/bs2-photo1.png') }}">
+                <img class="bs3-photo1" src="{{ asset('/app/bs3-photo1.png') }}">
+                <img class="bs1-p1" src="{{ asset('/app/bs1-p1.png') }}">
+                <img class="bs3-p1" src="{{ asset('/app/bs3-p1.png') }}">
+
+                <img class="bs2-photo2" src="{{ asset('/app/bs2-photo2.png') }}">
+                <video id="video-bs2-photo2" muted="muted">
+                    <source src="{{ asset('/app/smoke.mp4') }}" type="video/mp4">
+                </video>
+
+                <div class="bs1-photo2 row">
+                    <img class="bs1-photo2-s1 col-md-6" src="{{ asset('/app/bs1-photo2-s1.png') }}">
+                    <img class="bs1-photo2-s2 col-md-6" src="{{ asset('/app/bs1-photo2-s2.png') }}">
+                    <img class="bs1-photo2-s4 col-md-6" src="{{ asset('/app/bs1-photo2-s4.png') }}">
+                    <img class="bs1-photo2-s3 col-md-6" src="{{ asset('/app/bs1-photo2-s3.png') }}">
+                </div>
+
+                <div class="bs3-photo2 row">
+                    <img class="bs3-photo2-s1 col-md-6" src="{{ asset('/app/ps3-photo2-s1.png') }}">
+                    <img class="bs3-photo2-s2 col-md-6" src="{{ asset('/app/ps3-photo2-s2.png') }}">
+                    <img class="bs3-photo2-s4 col-md-6" src="{{ asset('/app/ps3-photo2-s4.png') }}">
+                    <img class="bs3-photo2-s3 col-md-6" src="{{ asset('/app/ps3-photo2-s3.png') }}">
+                </div>
+                <div class="bs1-photo3">
+                    <img src="{{ asset('/app/bs1-photo3.png') }}">
+                </div>
+                <div class="bs2-photo3">
+                    <img src="{{ asset('/app/bs2-photo3.png') }}">
+                </div>
+                <div class="bs3-photo3">
+                    <img src="{{ asset('/app/bs3-photo3.png') }}">
+                </div>
+
+                <div class="bs2-photo4 row">
+                    <div class="s1 col-md-6">
+                        <img src="{{ asset('/app/burger1.png') }}">
+                        <span class="burger-price-up text-danger">Delam 13€</span>
+                    </div>
+                    <div class="s2 col-md-6 ">
+                        <img src="{{ asset('/app/burger2.png') }}">
+
+                        <span class="burger-price-up text-danger">Deloxi 12€</span>
+                    </div>
+                    <div class="s3 col-md-6">
+                        <img src="{{ asset('/app/burger3.png') }}">
+                        <span class="burger-price-down text-danger">Pontati 12€</span>
+                    </div>
+                    <div class="s4 col-md-6">
+                        <img src="{{ asset('/app/burger4.png') }}">
+                        <span class="burger-price-down text-danger">Titano 11€</span>
+                    </div>
+                </div>
+                <div class="bs1-photo4 row">
+                    <div class="s1 col-md-6">
+                        <img src="{{ asset('/app/burger5.png') }}">
+                        <span class="burger-price-up text-danger">PRICE 9€</span>
+                    </div>
+                    <div class="s2 col-md-6 ">
+                        <img src="{{ asset('/app/burger6.png') }}">
+                        <span class="burger-price-up text-danger">PRICE 10€</span>
+                    </div>
+                    <div class="s3 col-md-6">
+                        <img src="{{ asset('/app/burger7.png') }}">
+                        <span class="burger-price-down text-danger">PRICE 19€</span>
+                    </div>
+                    <div class="s4 col-md-6">
+                        <img src="{{ asset('/app/burger8.png') }}">
+                        <span class="burger-price-down text-danger">PRICE 9€</span>
+                    </div>
+                </div>
+                <div class="bs3-photo4 row">
+                    <div class="s1 col-md-6">
+                        <img src="{{ asset('/app/burger9.png') }}">
+                        <span class="burger-price-up text-danger">PRICE 9€</span>
+                    </div>
+                    <div class="s2 col-md-6 ">
+                        <img src="{{ asset('/app/burger10.png') }}">
+                        <span class="burger-price-up text-danger">PRICE 10€</span>
+                    </div>
+                    <div class="s3 col-md-6">
+                        <img src="{{ asset('/app/burger11.png') }}">
+                        <span class="burger-price-down text-danger">PRICE 11€</span>
+                    </div>
+                    <div class="s4 col-md-6 ">
+                        <img src="{{ asset('/app/burger12.png') }}">
+                        <span class="burger-price-down text-danger">PRICE 12€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="werbschilder row">
+            <div class="imeges col-md-6">
+                <img class="outdoor5-img" src="{{ asset('/app/outdoor5.png') }}">
+                <img class="outdoor2-img" src="{{ asset('/app/outdoor2.png') }}">
+                <img class="outdoor3-img" src="{{ asset('/app/outdoor3.png') }}">
+                <img class="outdoor1-img" src="{{ asset('/app/outdoor1.png') }}">
+                <img class="outdoor7-img" src="{{ asset('/app/outdoor7.png') }}">
+            </div>
+            <div class="text col-md-6 d-flex justify-content-center align-items-center">
+                <p>Wir fertigen deine Werbeschilder professionell und individuell genau nach deinen Wünschen</p>
+            </div>
+
+        </div>
+    </div>
+    
+        <div class="categories row justify-content-center align-items-center">
+            {% for category in categories %}
+            <div class="category col-md-3 ms-1 mt-2">
+                <a href="/user/category/getCategory/{{ category.id }}">
+                    <div class="img">
+                        <img class="category-img"
+                            src="{{ asset('/img/category/' ~ category.id  ~ '/' ~ category.images[0].path) }}">
+                    </div>
+                    <div class="title d-flex justify-content-center align-items-center">
+                        <p>{{ category.title }}</p>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+
+</div>
+{% endblock %}

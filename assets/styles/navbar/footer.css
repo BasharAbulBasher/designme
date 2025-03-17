@@ -1,0 +1,24 @@
+.footer .contact-us .header img {
+    width: 200px;
+    height: 200px;
+    margin-right: -67px;
+}
+
+.footer .contact-us {
+    background-color: #212529;
+    padding: 30px;
+    color: #9b9d9e;
+}
+
+.footer .contact-us .contaktUs-img img {
+    width: 100%;
+    height: 300px;
+    border-radius: 50%;
+}
+.footer .daten div{ 
+    border-left: 1px solid;
+}
+.footer .daten div p{
+ margin-bottom: 0px;
+font-size: 14px;
+}

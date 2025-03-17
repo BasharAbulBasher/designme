@@ -1,0 +1,47 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}Article Show{% endblock %}
+
+{% block body %}
+<style>
+    .article-show .category-title h2 {
+        border-bottom: 3px solid red;
+    }
+
+    .article-show .article {
+        width: 200;
+        height: 200;
+        border: 1px solid black;
+    }
+
+    .article-show .article .img img {
+        width: 200px;
+        height: 100px;
+    }
+</style>
+<div class="article-show">
+    {% for category in categories %}
+    <div class="category p-4">
+        <div class="category-title">
+            <h2 class="text-center">{{ category.title }}</h2>
+            <div class="articles row">
+                {% for article in category.articles %}
+                <div class="article col-md-3 p-2">
+                    <div class="img text-center">
+                        <img src="{{ asset('/img/article/' ~ article.id ~ '/' ~ article.images[0].path) }}">
+                    </div>
+                    <div class="title">
+                        <p class="text-center">{{article.title}}</p>
+                    </div>
+                    <div class="buttons">
+                        <a class="btn btn-info w-100" href="/admin/article/edit/{{article.id}}">Update</a>
+                        <a class="btn btn-danger w-100" href="/admin/article/delete/{{article.id}}">Delete</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

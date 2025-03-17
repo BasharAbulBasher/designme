@@ -1,0 +1,106 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gastronomie Digital!{% endblock %}
+
+{% block body %}
+<style>
+  .gastronomie-digital .header {
+    height: 300px;
+    width: 100%;
+  }
+
+  .gastronomie-digital .header img {
+    height: 300px;
+    width: 100%;
+  }
+
+  .gastronomie-digital .con-header {
+    background-color: #181717;
+  }
+
+  .gastronomie-digital .con-header h5 {
+    color: #780000;
+    font-family: fantasy;
+  }
+
+  .gastronomie-digital .body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .gastronomie-digital .body .element {
+    width: 100%;
+  }
+
+  .gastronomie-digital .body .element img {
+    width: 400px;
+  }
+
+  .gastronomie-digital .body .element .text {
+    background-color:#fdf0d5;
+    
+      }
+</style>
+
+<div class="gastronomie-digital mb-5">
+  <div class="header">
+    <img class="" src="{{ asset('/app/gastronomie.png') }}">
+  </div>
+  <div class="con-header p-2 ps-3">
+    <h5>✔ Arbeiten Sie effizient und komfortabel in einer digitalen Umgebung.</h5>
+    <h5>✔ Sparen Sie wertvolle Zeit.</h5>
+    <h5>✔ Vermeiden Sie Fehler.</h5>
+    <h5>✔ verwalten Sie Ihre Arbeitsprozesse auf moderne Weise.</h5>
+  </div>
+  <div class="body mt-5 p-5" style="background-image:url('{{ asset('/app/gastronomie-digital-bg.png') }}')">
+    <div class="element kellner-gastronomie mt-5 row">
+      <img class=" col-md-6" src="{{ asset('/app/kellner-gastronomie.png') }}">
+      <div class="text col-md-6 p-3">
+        <h3>Kellner Bedienoberfläche</h3>
+        <p>In der Gastronomie zählt jede Sekunde. Mit unserer Kellner Bedienoberfläche bringst du dein Restaurant auf
+          das nächste Level! 🚀</p>
+        <p>🔹 Schnellere Bestellaufnahme – Keine Zettelwirtschaft mehr! Bestellungen werden direkt per iPad aufgenommen
+          und in Echtzeit an die Küche oder Bar übermittelt.</p>
+        <p>🔹 Mehr Kundenzufriedenheit – Gäste werden schneller und effizienter bedient, was die Wartezeit reduziert und
+          den Service verbessert.</p>
+        <p>🔹 Einfache Bedienung – Eine intuitive Benutzeroberfläche sorgt dafür, dass dein Team sofort loslegen kann –
+          ganz ohne komplizierte Schulungen.</p>
+        <p>🔹 Fehler minimieren – Keine Missverständnisse mehr bei handschriftlichen Bestellungen, alles läuft digital
+          und fehlerfrei.</p>
+        <h6>Mach deinen Service smarter und effizienter – mit unserer digitalen Kellner Bedienoberfläche!</h6>
+      </div>
+    </div>
+    <div class="element koch-gastronomie mt-5 row">
+      <img class="col-md-6" src="{{ asset('/app/koch-gastronomie.png') }}">
+      <div class="text col-md-6 p-3">
+        <h3>Koch Bedienoberfläche</h3>
+      <p>Die Küche ist das Herzstück jedes Restaurants – und mit unserer Koch-Bedienoberfläche arbeitet dein Team noch effizienter! 👨‍🍳🔥
+      <p>✅ Bestellungen in Echtzeit – Alle Aufträge werden direkt aus dem Service an die Küche übermittelt, ohne Verzögerungen oder Missverständnisse.</p>
+      <p>✅ Klare Übersicht – Jeder Koch sieht genau, was zubereitet werden muss – organisiert, strukturiert und ohne Papierchaos.</p>
+      <p>✅ Schnellere Abläufe – Weniger Nachfragen, mehr Produktivität! Dein Team kann sich auf das konzentrieren, was zählt: erstklassige Gerichte.</p>
+      <p>✅ Fehler vermeiden – Keine verlorenen oder unlesbaren Bestellzettel mehr – alles läuft digital und zuverlässig.</p>
+
+<h6>Steigere die Effizienz deiner Küche mit der digitalen Koch-Bedienoberfläche – für einen reibungslosen Ablauf und zufriedene Gäste!</h6>
+      </div>
+    </div>
+    <div class="element kassensystem-gastronomie mt-3 row">
+      <img class="col-md-6" src="{{ asset('/app/kassensystem-gastronomie.png') }}">
+      <div class="col-md-6 text  p-3">
+      <h3>Das intelligente Kassensystem für deine Gastronomie – Alles im Blick, alles unter Kontrolle!</h3>
+        <p>  Das intelligente Kassensystem für deine Gastronomie – Alles im Blick, alles unter Kontrolle!
+        Ein erfolgreiches Restaurant braucht mehr als nur ein Kassensystem – es braucht eine komplette Lösung! Mit unserem smarten Kassensystem hast du die volle Kontrolle über Service, Küche und Gäste. 🍽️</p>
+      <p>✅ Kompletter Überblick über den Service – Sieh jederzeit, welche Tische von welchem Kellner bedient werden und optimiere die Abläufe.</p>
+      <p>✅ Perfekte Küchenkoordination – Behalte die Koch-Bedienoberfläche im Blick und stelle sicher, dass alle Bestellungen effizient bearbeitet werden.</p>
+      <p>✅ Tisch-Management in Echtzeit – Erkenne sofort, welche Tische noch verfügbar sind und optimiere deine Platzvergabe.</p>
+      <p>✅ Schnelle & sichere Abrechnung – Ob Barzahlung, Karte oder kontaktlos – dein Kassensystem verarbeitet Zahlungen mühelos und sicher.</p>
+      <p>✅ Rechtssicher & Finanzamt-konform – Immer auf dem neuesten Stand der gesetzlichen Vorgaben für eine sorgenfreie Buchhaltung.</p>
+
+      <h6>Ein Kassensystem, das mehr kann – für einen reibungslosen Ablauf, zufriedene Gäste und ein erfolgreiches Restaurant! 🚀</h6>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

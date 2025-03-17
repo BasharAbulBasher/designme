@@ -1,0 +1,47 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}Article Create{% endblock %}
+
+{% block body %}
+<style>
+.article-create .title{
+    border-bottom:3px solid #dc3545;
+}
+</style>
+
+<div class="article-create d-flex justify-content-center">
+    <div class="mt-3 w-75">
+        <h2 class="title">Create Article</h2>
+        <form method="post" action="{{ path('article.save') }}"  enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Title</label>
+                <input type="text" class="form-control" placeholder="Article Title" name="title" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Description </label>
+                <textarea class="form-control" rows="3" name="description"></textarea>
+            </div>
+            <div class="select-categoryId">
+                <label class="form-label">The Category of this Article </label>
+                <select class="form-select" aria-label="Default select example" name="category_id" required>
+                    <option selected> </option>
+                    {% for category in categories %}
+                    <option value="{{ category.id }}">{{category.title}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="images mt-3">
+                <div class="mb-3">
+                    <label for="formFileMultiple" class="form-label">Images of this Article</label>
+                    <input name="images[]" class="form-control" type="file" id="formFileMultiple" multiple >
+                </div>
+            </div>
+
+            <button class="btn btn-danger w-100 mt-2">Save</button>
+        </form>
+        {% if data.message is defined and data.message is not empty %}
+            <div class="text-success">{{ data.message}}</div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

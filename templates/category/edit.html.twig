@@ -1,0 +1,45 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}Edit Category{% endblock %}
+
+{% block body %}
+<style>
+    .category-edit .category {}
+
+    .category-edit .img img {
+        width: 300px;
+        height: 300px;
+    }
+</style>
+<div class="category-edit d-flex justify-content-center">
+    <div class="category">
+        <h3>Update Category {{category.title}}</h3>
+        <div class="img">
+            <img src="{{ asset('/img/category/' ~ category.id ~ '/' ~ category.images[0].path) }}">
+        </div>
+        <div class="form w-100">
+            {{ form_start(form_definition) }}
+            <div class="title">
+                <div> {{ form_label(form_definition.title) }}</div>
+                <div> {{ form_widget(form_definition.title) }}</div>
+            </div>
+            <div class="description">
+                <div> {{ form_label(form_definition.description) }}</div>
+                <div> {{ form_widget(form_definition.description) }}</div>
+            </div>
+            <div class="image">
+                <div> {{ form_label(form_definition.image) }}</div>
+                <div> {{ form_widget(form_definition.image) }}</div>
+            </div>
+            {{ form_row(form_definition.submit,{attr:{class:'btn btn-danger mt-2'}}) }}
+            {{ form_end(form_definition) }}
+        </div>
+        {% if data.message is defined and data.message is not empty %}
+        <div class="alert alert-success">
+            <h3>{{data.message}}</h3>
+        </div>
+        {% endif %}
+    </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ path('home') }}">
+    <img style="width:100px;height:100px" src="{{ asset('/app/3dLogo.png') }}">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " href="{{ path('home') }}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{{ path('gastronomie.digital') }}">Gastronomie-Digital</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{{ path('gastronomie.design') }}">Gastronomie-Design</a>
+        </li>
+      </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item custom">
+            <div class="img-content">
+              <a href="/user/category/getCategory/74"><img src="{{ asset('/app/outdoor2.png') }}"></a>
+            </div>
+            <a class="nav-link " aria-current="page" href="/user/category/getCategory/74">Werbschilder</a>
+          </li>
+          <li class="nav-item custom ms-2">
+            <div class="img-content">
+              <a href="/user/category/getCategory/75"><img src="{{ asset('/app/kassen-sys.png') }}"></a>
+            </div>
+            <a class="nav-link " aria-current="page" href="/user/category/getCategory/75">Kassensystem</a>
+          </li>
+          <li class="nav-item custom ms-2">
+            <div class="img-content">
+              <a href="/user/category/getCategory/73"><img src="{{ asset('/app/onlineshop2.png') }}"></a>
+            </div>
+            <a class="nav-link " aria-current="page" href="/user/category/getCategory/73">Software</a>
+          </li>
+            <li class="nav-item custom ms-2">
+            <div class="img-content">
+              <a  href="/user/category/getCategory/72"><img src="{{ asset('/app/digital-menu.png') }}"></a>
+            </div>
+            <a class="nav-link " aria-current="page" href="/user/category/getCategory/72">Display Menü</a>
+          </li>
+        </ul>
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <a class="nav-link " aria-current="page" href="/user/contact_us">Contact Us</a>
+         </ul>
+    </div>
+  </div>
+</nav>

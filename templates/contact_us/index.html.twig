@@ -1,0 +1,90 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact Us!{% endblock %}
+
+{% block body %}
+<style>
+    .contact_us {
+        
+    }
+     .contact_us .header{
+       
+     }
+
+
+    .contact_us .header .text {
+        color:rgb(68, 67, 65);
+        border-left: 10px solid #ccd5ae;
+    }
+
+    .contact_us .header .text h1 {
+        border-bottom: 1px solid #fefae0;
+    }
+
+    .contact_us .header .text .contact-details {
+        border-bottom: 3px solid #fefae0;
+    }
+      .contact_us .header .footer div{
+        width:50px;
+        height:50px;
+        border-radius:50%;
+      }
+      .contact_us .body{
+        color:rgb(62, 62, 61);
+      }
+      .contact_us .body .description{
+         background-color:#588157;
+      }
+    .contact_us .body .beratung{
+       
+        background-color: #faedcd;
+      }
+    .contact_us .body .drive-to-you{
+          background-color:#d4a373;
+    }
+</style>
+
+<div class="contact_us mt-2 p-5">
+    <div class="header row p-5">
+        <div class="text col-md-12">
+            <h1 class="">Kontaktieren Sie uns – Wir sind für Sie da!</h1>
+            <p>Bei uns steht der Kundenservice an erster Stelle! Wenn Sie Fragen haben oder mehr über unsere Lösungen
+                erfahren möchten, steht Ihnen unser Ansprechpartner, Ing. Ahmed Abul Basher, gerne zur Verfügung. Er
+                hilft Ihnen mit Fachkompetenz und Engagement weiter.</p>
+            <div class="contact-details mt-2">
+                <h6>Ansprechpartner: Ing. Ahmed Abul Basher</h6>
+                <h6 class="text-danger">Telefon: 01573 5568378</h6>
+                <h6>Email: ahmedabulbasher@hotmail.com</h6>
+            </div>
+            <h4>Gemeinsam zum Erfolg – Lassen Sie uns Ihr Geschäft optimieren und zukunftssicher gestalten!</h4>
+            <div class="footer d-flex justify-content-center">
+                <div style="background-color:#344e41"></div>
+                <div style="background-color:#fefae0"></div>
+                <div style="background-color:#d4a373"></div>
+            </div>
+        </div>
+    </div>
+    <div class="body mt-3 row">
+        <h1>Warum Wir?</h1>
+        <div class="description col-md-4 p-3">
+            <h5>„Lösungen für alle Branchen – nicht nur Gastronomie!“</h5>
+            <p>Unsere Dienstleistungen richten sich nicht nur an die Gastronomie, sondern auch an alle Branchen, die
+                Unterstützung im Bereich Design, Softwarelösungen oder digitale Dienstleistungen benötigen. Egal, ob Sie
+                ein kleines Geschäft oder ein großes Unternehmen führen – wir bieten Ihnen maßgeschneiderte Lösungen,
+                die Ihre Prozesse effizienter und zukunftsfähiger machen.</p>
+        </div>
+        <div class="beratung col-md-4 p-3">
+            <h5>„Kostenlose Beratung für Ihr Business!“</h5>
+            <p>Bei uns erhalten Sie eine kostenlose und unverbindliche Beratung, um die besten Lösungen für Ihr Geschäft
+                zu finden. Egal, ob es um Design, Software oder maßgeschneiderte Dienstleistungen geht – wir stehen
+                Ihnen mit Fachwissen und Erfahrung zur Seite, ohne dass Kosten für Sie entstehen.
+                Nutzen Sie die Chance, Ihr Unternehmen effizienter und zukunftsfähiger zu machen – ganz ohne Risiko!</p>
+        </div>
+        <div class="drive-to-you col-md-4 p-3">
+            <h5>Haben Sie keine Zeit? Sind Sie immer beschäftigt?</h5>
+            <p> Kein Problem!
+                Wenn es Ihnen an Zeit fehlt, kommen wir gerne zu Ihnen – ganz bequem und kostenlos! Wir bieten Ihnen die Möglichkeit, die Beratung direkt vor Ort zu erhalten, ohne dass es zusätzliche Kosten für Sie gibt. So können Sie sich auf Ihr Geschäft konzentrieren, während wir uns um die passenden Lösungen kümmern!</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,791 @@
+ /*Palis Schawarma*/
+ .home {
+
+ }
+ 
+ /*Home category*/
+ .home .category {
+     border: 2px solid black;
+     padding: 0px;
+ }
+
+ .category-img {
+     width: 100%;
+     height: 150px;
+ }
+
+ /* Home display*/
+ .home .display {
+     background-color: black;
+     width: 100%;
+     height: 300px;
+     margin-bottom: 50px;
+     position: relative;
+     overflow: hidden;
+ }
+
+ /* Home displays the Logo*/
+ .home .display .logo {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     color: white;
+     animation: finesh-animation 2s ease 6s both;
+ }
+
+ @keyframes finesh-animation {
+     0% {
+         transform: translateY(0%);
+     }
+
+     100% {
+         transform: translateY(100%);
+
+     }
+ }
+
+ .home .display .logo span {
+     font-size: 100px;
+     font-weight: bolder;
+     display: inline-block;
+     transform: rotateY(90deg);
+ }
+
+ .home .display .logo span:nth-child(1) {
+     animation: home-logo 2s ease 1s both;
+ }
+
+ .home .display .logo span:nth-child(2) {
+     animation: home-logo 2s ease 1s both;
+ }
+
+ .home .display .logo span:nth-child(3) {
+     animation: home-logo 2s ease 1s both;
+ }
+
+ .home .display .logo span:nth-child(4) {
+     animation: home-logo 2s ease 1s both;
+ }
+
+ .home .display .logo span:nth-child(5) {
+     animation: home-logo 2s ease 1s both;
+ }
+
+ .home .display .logo span:nth-child(6) {
+     animation: home-logo 2s ease 1s both;
+ }
+
+ .home .display .logo span:nth-child(7) {
+     animation: home-logo 2s ease 1s both;
+ }
+
+ .home .display .logo span:nth-child(8) {
+     animation: home-logo 2s ease 1s both;
+ }
+
+ @keyframes home-logo {
+     0% {
+         filter: blur(8px);
+         transform: rotateY(90deg);
+     }
+
+     100% {
+         transform: rotateY(0deg);
+         filter: blur(0px);
+
+     }
+ }
+
+ .home .display .logo .borderBottom {
+     border-bottom: 2px solid white;
+     margin-top: -30px;
+     animation: home-logo-borderBottom 1s ease 2.5s both;
+ }
+
+ @keyframes home-logo-borderBottom {
+     0% {
+         width: 0%;
+     }
+
+     100% {
+         width: 100%;
+
+     }
+ }
+
+ .home .display .logo .d-w {
+     margin-left: 50%;
+     font-size: 27px;
+     animation: home-logo-d-w 2s ease 2.5s both;
+ }
+
+ @keyframes home-logo-d-w {
+     0% {
+         visibility: hidden;
+         filter: blur(10px);
+     }
+
+     50% {
+         filter: blur(10px);
+     }
+
+     100% {
+         filter: blur(0px);
+         visibility: visible;
+
+     }
+ }
+
+ /* Home display the 'Websiten'*/
+ .home .display .website {
+     width: 100%;
+     height: 100%;
+     visibility: hidden;
+     position: absolute;
+     animation: show-website 2.5s linear 6.5s both;
+ }
+
+ @keyframes show-website {
+     0% {
+
+         filter: blur(100px);
+     }
+
+     50% {
+         visibility: visible;
+         filter: blur(50px);
+     }
+
+     100% {
+         filter: blur(0px);
+         visibility: visible;
+
+     }
+ }
+
+ .home .display .website .images img {
+     width: 100%;
+     height: 300px;
+ }
+
+ .home .display .website .cover {
+     width: 82%;
+     height: 0%;
+     background-color: black;
+     opacity: 0.8;
+     position: absolute;
+     left: 10%;
+     top: 10%;
+     animation: home-website-cover 1s linear 10s both;
+ }
+
+ @keyframes home-website-cover {
+     0% {
+
+         height: 0%;
+     }
+
+     100% {
+         height: 82%;
+
+     }
+ }
+
+ .home .display .website .description {
+     width: 82%;
+     height: 82%;
+     opacity: 0.8;
+     position: absolute;
+     left: 10%;
+     top: 10%;
+ }
+
+ .home .display .website .description .text h2 {
+     color: #f0e9e9;
+     visibility: hidden;
+     border: 7px solid #f0e9e9;
+     ;
+     padding: 5px;
+     animation: home-website-h2 2s linear 11s both;
+ }
+
+ @keyframes home-website-h2 {
+     0% {
+
+         visibility: hidden;
+         transform: rotateY(90deg);
+         opacity: 0;
+     }
+
+     100% {
+         visibility: visible;
+         transform: rotateY(0deg);
+         opacity: 1;
+
+
+     }
+ }
+
+ .home .display .website .description .text h2 .kostenlos {
+     display: inline-block;
+     animation: kostenlos-word 1s ease 14s reverse;
+ }
+
+ @keyframes kostenlos-word {
+     0% {
+
+         transform: scale(1);
+         color: white;
+     }
+
+     100% {
+         transform: scale(2);
+     }
+ }
+
+ .home .display .website .description .text img {
+     width: 100%;
+     height: 300px;
+     position: absolute;
+     left: -22px;
+     top: -33px;
+     visibility: hidden;
+     animation: website-text-bg 2s ease 14s both;
+ }
+
+ @keyframes website-text-bg {
+     0% {
+
+         visibility: hidden;
+         opacity: 0;
+     }
+
+     100% {
+         visibility: visible;
+         opacity: 1;
+     }
+ }
+
+ /*Home display the #digital-menu'*/
+ .home .display .digital-menu {
+     position: absolute;
+     top: -100%;
+     left: 0;
+     width: 100%;
+     height: 300px;
+     animation: digital-menu-animation 1s linear 18s both;
+ }
+
+ @keyframes digital-menu-animation {
+     0% {
+
+         top: -100%;
+     }
+
+     100% {
+         top: 0%;
+     }
+ }
+
+ .home .display .digital-menu .img1 {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 300px;
+ }
+
+ .home .display .digital-menu .img2 {
+     position: absolute;
+     top: 0;
+     left: 100%;
+     width: 100%;
+     height: 300px;
+     animation: digitalMenuImg2 1.5s ease 22s both;
+ }
+
+ @keyframes digitalMenuImg2 {
+     0% {
+
+         left: 100%;
+     }
+
+     100% {
+         left: 0%;
+     }
+ }
+
+ .home .display .digital-menu .cover {
+     width: 90%;
+     height: 300px;
+     background-color: black;
+     margin: auto;
+     visibility: hidden;
+     opacity: 0;
+     animation: digitalMenuCoverAni 1s linear 19s both;
+ }
+
+ @keyframes digitalMenuCoverAni {
+     0% {
+
+         visibility: hidden;
+         opacity: 0;
+     }
+
+     100% {
+         visibility: visible;
+         opacity: 0.8;
+     }
+ }
+
+ .home .display .digital-menu .cover h2 {
+     color: #f0e9e9;
+     background-color: black;
+     opacity: 1;
+     border-bottom: 7px solid #f0e9e9;
+
+ }
+
+ .home .display .digital-menu .no-overload-bs {
+     position: absolute;
+     width: 87%;
+     height: 104px;
+     top: 29%;
+     left: 7%;
+     overflow: hidden;
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs1-photo1 {
+     position: absolute;
+     width: 30%;
+     height: 94px;
+     left: 1%;
+     animation: bs-photos-down 1s ease 25s both, move-down 1s linear 29s both;
+ }
+
+ @keyframes bs-photos-down {
+     0% {
+
+         top: -90%;
+     }
+
+     100% {
+         top: 5%;
+     }
+ }
+
+ @keyframes move-down {
+     0% {}
+
+     100% {
+         top: 100%;
+     }
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs2-photo1 {
+     position: absolute;
+     width: 29%;
+     height: 94px;
+     left: 35%;
+     animation: bs-photos-down 1s ease 25s both, move-down 1s linear 29s both;
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs3-photo1 {
+     position: absolute;
+     width: 31%;
+     height: 94px;
+     left: 69%;
+     animation: bs-photos-down 1s ease 25s both, move-down 1s linear 29s both;
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs1-p1 {
+     position: absolute;
+     width: 5%;
+     height: 110%;
+     top: 0%;
+     left: 1%;
+     transform: rotateY(90deg);
+     animation: bs13-p1p3-animation 1s ease 26s both, move-down 1s linear 29s both;
+
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs3-p1 {
+     position: absolute;
+     width: 5%;
+     height: 98%;
+     top: 5%;
+     left: 95%;
+     transform: rotateY(90deg);
+     animation: bs13-p1p3-animation 1s ease 26s both, move-down 1s linear 29s both;
+
+ }
+
+ @keyframes bs13-p1p3-animation {
+     0% {
+
+         transform: rotateY(90deg)
+     }
+
+     100% {
+         transform: rotateY(0deg)
+     }
+
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs2-photo2 {
+     position: absolute;
+     width: 29%;
+     height: 94px;
+     left: 35%;
+     top: -100%;
+     animation: move-to-bs 1s linear 29s both, removeElementPerOpacity 3s ease 35s both;
+ }
+
+ @keyframes move-to-bs {
+     0% {}
+
+     100% {
+         top: 0%
+     }
+
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs1-photo2 {
+     position: absolute;
+     width: 35%;
+     height: 88px;
+     left: 1%;
+     top: 5%;
+     animation: removeElementPerOpacity 3s ease 35s both;
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs1-photo2 img {
+     display: inline-block;
+     height: 48px;
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs1-photo2 img:nth-child(1),
+ .home .display .digital-menu .no-overload-bs .bs1-photo2 img:nth-child(3) {
+     margin-right: -25px;
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs1-photo2 img:nth-child(1) {
+     transform-origin: top left;
+     transform: rotate(-82deg);
+     z-index: 2;
+     animation: rotate-slice 1s ease 29s both, scalTo2 1s ease 32s both
+ }
+
+ @keyframes rotate-slice {
+     0% {}
+
+     100% {
+         transform: rotate(0deg);
+     }
+
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs1-photo2 img:nth-child(4),
+ .home .display .digital-menu .no-overload-bs .bs3-photo2 img:nth-child(4) {
+     transform-origin: bottom right;
+     transform: rotate(-82deg);
+     animation: rotate-slice 1s ease 29.5s both;
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs1-photo2 img:nth-child(2),
+ .home .display .digital-menu .no-overload-bs .bs3-photo2 img:nth-child(2) {
+     transform-origin: top right;
+     transform: rotate(82deg);
+     animation: rotate-slice 1s ease 29s both;
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs1-photo2 img:nth-child(3),
+ .home .display .digital-menu .no-overload-bs .bs3-photo2 img:nth-child(3) {
+     transform-origin: bottom left;
+     transform: rotate(82deg);
+     animation: rotate-slice 1s ease 30s both;
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs3-photo2 {
+     position: absolute;
+     width: 35%;
+     height: 94px;
+     left: 69%;
+     top: 5%;
+     animation: removeElementPerOpacity 3s ease 35s both;
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs3-photo2 img {
+     display: inline-block;
+     height: 48px;
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs3-photo2 img:nth-child(1),
+ .home .display .digital-menu .no-overload-bs .bs3-photo2 img:nth-child(3) {
+     margin-right: -25px;
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs3-photo2 img:nth-child(1) {
+     transform-origin: top left;
+     transform: rotate(-82deg);
+     z-index: 2;
+     animation: rotate-slice 1s ease 29s both, scalTo2 1s ease 32s both;
+ }
+
+ @keyframes scalTo2 {
+     0% {}
+
+     100% {
+         transform: scale(2);
+         margin-left: -12px;
+     }
+
+ }
+
+ #video-bs2-photo2 {
+     position: absolute;
+     left: 35%;
+     top: -52%;
+     width: 29%;
+     opacity: 0;
+     visibility: hidden;
+     animation: showSmoke 2s ease 31s both, removeSmoke 3s ease 35s both;
+ }
+
+ @keyframes showSmoke {
+     0% {}
+
+     100% {
+         visibility: visible;
+         opacity: 0.7;
+     }
+ }
+
+ @keyframes removeSmoke {
+     0% {}
+
+     100% {
+         visibility: hidden;
+         opacity: 0;
+     }
+ }
+
+ @keyframes removeElementPerOpacity {
+     0% {}
+
+     100% {
+         opacity: 0;
+     }
+ }
+
+
+ .home .display .digital-menu .no-overload-bs .bs2-photo3 {
+     position: absolute;
+     width: 29%;
+     height: 94px;
+     left: 35%;
+     z-index: 2;
+
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs2-photo3 img:nth-child(1) {
+     width: 100%;
+     height: 94px;
+     animation: showHamburger 3s ease 36s both, removeElementPerScale 2s ease 42s both;
+ }
+
+ @keyframes showHamburger {
+     0% {
+         transform: scale(0);
+     }
+
+     100% {
+         transform: scale(1);
+     }
+ }
+
+ @keyframes removeElementPerScale {
+     0% {}
+
+     100% {
+         transform: scale(0);
+
+     }
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs1-photo3 {
+     position: absolute;
+     width: 30%;
+     height: 88px;
+     left: 1%;
+     top: 5%;
+     z-index: 2;
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs1-photo3 img:nth-child(1) {
+     width: 100%;
+     height: 94px;
+     animation: showHamburger 3s ease 36s both, removeElementPerScale 2s ease 42s both;
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs3-photo3 {
+     position: absolute;
+     width: 30%;
+     height: 94px;
+     left: 69%;
+     top: 5%;
+
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs3-photo3 img:nth-child(1) {
+     width: 100%;
+     height: 94px;
+     animation: showHamburger 3s ease 36s both, removeElementPerScale 2s ease 42s both;
+ }
+
+ /*bs2 photo4*/
+ .home .display .digital-menu .no-overload-bs .bs2-photo4 {
+     position: absolute;
+     width: 29%;
+     height: 94px;
+     left: 35%;
+     top: 5%;
+     z-index: 1;
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs2-photo4 div {
+     height: 20px;
+     opacity: 0;
+     animation: showElementPerOpacity 3s ease 42s both;
+ }
+
+ @keyframes showElementPerOpacity {
+     0% {}
+
+     100% {
+         opacity: 1;
+     }
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs2-photo4 img {
+     width: 111%;
+     height: 207%;
+ }
+
+ /*bs1 photo4*/
+ .home .display .digital-menu .no-overload-bs .bs1-photo4 {
+     position: absolute;
+     width: 30%;
+     height: 88px;
+     left: 1%;
+     top: 5%;
+     z-index: 1;
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs1-photo4 div {
+     height: 20px;
+     opacity: 0;
+     animation: showElementPerOpacity 3s ease 42s both;
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs1-photo4 img {
+     width: 111%;
+     height: 207%;
+ }
+
+
+ /*bs3 photo4*/
+ .home .display .digital-menu .no-overload-bs .bs3-photo4 {
+     position: absolute;
+     width: 30%;
+     height: 94px;
+     left: 69%;
+     top: 5%;
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs3-photo4 div {
+     height: 20px;
+     opacity: 0;
+     animation: showElementPerOpacity 3s ease 42s both;
+ }
+
+ .home .display .digital-menu .no-overload-bs .bs3-photo4 img {
+     width: 111%;
+     height: 207%;
+ }
+
+ @keyframes showElementPerOpacity {
+     0% {}
+
+     100% {
+         opacity: 1;
+     }
+ }
+ .burger-price-up {
+     position: absolute;
+     font-size: 5px;
+     top: 0%;
+ }
+
+ .burger-price-down {
+     position: absolute;
+     font-size: 5px;
+     top: 50%;
+ }
+
+/* Werbschilder*/
+ .home .display .werbschilder
+ {
+    top: -100%;
+    width: 101%;
+    height: 300px;
+    position: absolute;
+    z-index: 2;
+    background-color: black;
+    animation:downTo0 1s ease 45s both;
+ }
+   .home .display .werbschilder .imeges{
+    position: relative;
+    overflow: hidden;
+   }
+  .home .display .werbschilder .imeges .outdoor5-img,.home .display .werbschilder .imeges .outdoor2-img,.home .display .werbschilder .imeges .outdoor3-img,.home .display .werbschilder .imeges .outdoor1-img,.home .display .werbschilder .imeges .outdoor7-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .home .display .werbschilder .imeges .outdoor2-img
+  {
+    top: -100%;
+    animation: downTo0 1s linear 50s both;
+  }
+.home .display .werbschilder .imeges .outdoor3-img {
+        top: -100%;
+        animation: downTo0 1s linear 55s both;
+    }
+.home .display .werbschilder .imeges .outdoor1-img {
+    top: -100%;
+    animation: downTo0 1s linear 60s both;
+}
+.home .display .werbschilder .imeges .outdoor7-img {
+    top: -100%;
+    animation: downTo0 1s linear 65s both;
+}
+
+  .home .display .werbschilder .text
+  {
+    font-family: fantasy;
+    font-size: 32px;
+    color: #8f9296;
+    
+  }
+  .home .display .werbschilder .text p{
+    border-left: 3px solid;
+    padding: 6px;
+  }
+   @keyframes downTo0 {
+       0% {}
+
+       100% {
+           top: 0%;
+       }
+   }

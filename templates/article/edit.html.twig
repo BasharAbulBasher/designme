@@ -1,0 +1,65 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}Article edit {{ article.title}}{% endblock %}
+
+{% block body %}
+<style>
+    .article-edit .article .form-check img {
+        width: 100px;
+        height: 100px;
+    }
+</style>
+<div class="article-edit">
+    <div class="article container p-4">
+    <h2> Article Update</h2>
+        <form method="post" action="/admin/article/update" enctype="multipart/form-data">
+            <input type="hidden" name="articleId" value="{{ article.id }}">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label text-info">Title</label>
+                <input value={{ article.title }} type="text" class="form-control" placeholder="Article Title"
+                    name="title" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label text-info">Description </label>
+                <textarea class="form-control" rows="3" name="description">{{article.description}}</textarea>
+            </div>
+            <div class="row">
+            {% for img in article.images %}
+                <div class="form-check col-md-4">
+                    <img src="{{ asset('/img/article/' ~ article.id ~ '/' ~ img.path) }}">
+                    <input name="imagesToDelete[]" class="form-check-input" type="checkbox" value="{{ img.id }}"
+                        id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Remove this Image
+                    </label>
+                </div>
+            {% endfor %}
+            </div>
+            <div class="category-selec mt-2">
+                <label class="form-check-label text-info" for="flexCheckDefault">Category Select</label>
+                <select name="categoryId" class="form-select" aria-label="Default select example" required>
+                    {% for category in categories %}
+                    {% if category.id==article.categoryId %}
+                    <option value="{{ category.id }}" selected>{{category.title}}</option>
+                    {% else %}
+                    <option value="{{ category.id }}">{{category.title}}</option>
+                    {% endif %}
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="mb-3 mt-3">
+                <label class="form-check-label text-info" for="flexCheckDefault">More Image</label>
+                <input name="images[]" class="form-control" type="file" id="formFileMultiple" multiple>
+            </div>
+            <button class="btn btn-info w-100 mt-2" type="submit">Update</button>
+        </form>
+        {% if data.message is defined and data.message is not empty %}
+            <div>
+                <p class="text-info">{{data.message}}</p>
+            </div>
+        {% endif %}
+    </div>
+
+</div>
+{% endblock %}

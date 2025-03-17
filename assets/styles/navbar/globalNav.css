@@ -1,0 +1,14 @@
+
+
+.navbar .custom .img-content{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 5px;
+}
+.navbar .custom img
+{
+    width: 70px;
+    height: 70px;
+}
